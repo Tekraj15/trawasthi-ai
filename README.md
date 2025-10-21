@@ -1,2 +1,2 @@
 # trawasthi-ai
-Welcome to my developer portfolio
+Hi, this is Tekraj Awasthi. Welcome to my developer portfolio.
