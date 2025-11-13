@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects – Adithya S Kolavi</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/main.js" defer></script>
+</head>
+<body>
+    <!-- ==== HEADER (copy-paste from above) ==== -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Adithya S Kolavi</h1>
+                <p>AI Researcher, Building Generative AI solutions at Scale</p>
+            </div>
+            <img src="../images/profile.jpg" alt="Adithya S Kolavi" class="profile-photo">
+        </div>
+        <div class="social-icons">
+            <a href="mailto:your.email@example.com"><img src="../images/email-icon.svg" alt="Email"></a>
+            <a href="https://linkedin.com/in/yourprofile"><img src="../images/linkedin-icon.svg" alt="LinkedIn"></a>
+            <a href="https://x.com/yourhandle"><img src="../images/x-icon.svg" alt="X"></a>
+            <a href="../assets/cv.pdf" download><img src="../images/cv-icon.svg" alt="CV"></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Research Projects</h2>
+
+        <div class="projects-grid">
+            <!-- ==== Agentic RAG Chatbot ==== -->
+            <article class="project-card">
+                <h3>Hybrid LLM and Agentic RAG Powered E-commerce Customer Support Chatbot <span class="dot"></span></h3>
+                <li>Designed a modular, Agentic RAG-powered chatbot using Rasa NLU, LangChain, Pinecone vector DB, OpenAI Embedding for advanced retrieval (HyDE + MMR), and DeepSeek-R1 for tool-augmented generation.</li>
+                <div class="tags">
+                    <span class="tag">spaCy</span><span class="tag">NLTK</span><span class="tag">Transformers</span><span class="tag">SkyPilot</span><span class="tag">Azure</span>
+                </div>
+            </article>
+
+            <!-- ==== RAG MedBot ==== -->
+            <article class="project-card">
+                <h3>RAG Powered MedBot with Intelligent Query Router for KB & LLM <span class="dot"></span></h3>
+                <li>Engineered a Rasa-based Medical assistant chatbot powered by RAG (LangChain with Pinecone vector store), routing queries to knowledge base or LLM synthesis based on complexity.</li>
+                <div class="tags">
+                    <span class="tag">LLaVA</span><span class="tag">PaliGemma</span><span class="tag">FastGPT</span><span class="tag">Transformers</span>
+                </div>
+            </article>
+
+            <!-- ==== MiniSAM ==== -->
+            <article class="project-card">
+                <h3>QLoRA-MiniSAM - A Quantized LoRA-Adapted Lightweight SAM</h3>
+                <li>Developed a 4-bit quantized, LoRA-adapted lightweight Segment Anything Model (SAM) using ViT-B, enabling real-time medical image segmentation with >30 FPS on consumer GPUs and less than 6 GB VRAM.</li>
+                <div class="tags">
+                    <span class="tag">LLaVA</span><span class="tag">Visual RAG</span><span class="tag">Llama-Index</span><span class="tag">Qdrant</span>
+                </div>
+            </article>
+
+            <!-- ==== SentenceTrasnformer ==== -->
+            <article class="project-card">
+                <h3>JobMatcher-AI</h3>
+                <li>Built an end-to-end hybrid search-powered job-matching system for jobseekers, using Mantiks API, SentenceTransformer embeddings, and Pinecone Vector DB.</li>
+                <div class="tags">
+                    <span class="tag">PyTorch</span><span class="tag">BERT</span><span class="tag">PEFT</span><span class="tag">Distributed Training</span><span class="tag">HPC</span>
+                </div>
+            </article>
+
+            <!-- ==== Computer vision ==== -->
+            <article class="project-card">
+                <h3>Real-Time Sign Language Recognition System Using Deep NN Architecture</h3>
+                <li>Built a SOTA computer vision-powered web app(in Flask) for American Sign Language recognition using the integration of Single Shot Detector (SSD) and MobileNetv2 models, employed with Transfer Learning</li>
+                <div class="tags">
+                    <span class="tag">PyTorch</span><span class="tag">LLaVA</span><span class="tag">PEFT</span><span class="tag">Distributed Training</span><span class="tag">HPC</span>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="section-title mt-12">Other Projects</h2>
+        <div class="projects-grid">
+            <!-- ==== Cognitune ==== -->
+            <article class="project-card">
+                <h3>Cognitune <span class="dot"></span></h3>
+                <p>All-in-one platform for LLMOps, featuring distributed data processing, multi-GPU fine-tuning, dynamic evaluation, and one-click high-throughput API deployment.</p>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Transformers</span><span class="tag">Containerization</span>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- ==== BOTTOM NAV ==== -->
+    <nav class="bottom-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work-experience.html">Work Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="education.html">Education</a>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+    </nav>
+</body>
+</html>
