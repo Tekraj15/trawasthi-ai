@@ -1,26 +1,303 @@
-/* Global resets */
-body { font-family: sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
-a { text-decoration: none; color: #007bff; }
+/* -------------------------------------------------
+   GLOBAL RESET & TYPOGRAPHY
+   ------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
 
-/* Header */
-.header { padding: 20px; display: flex; flex-direction: column; align-items: center; }
-.header-content { display: flex; justify-content: space-between; width: 100%; max-width: 1200px; }
-.profile-photo { width: 100px; height: 100px; border-radius: 50%; }
-.social-icons { display: flex; gap: 10px; margin-top: 10px; }
-.social-icons img { width: 24px; height: 24px; }
+/* -------------------------------------------------
+   LAYOUT CONTAINER
+   ------------------------------------------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
 
-/* Sections */
-.about { padding: 20px; max-width: 800px; margin: 0 auto; }
-.btn { background: #e0e7ff; padding: 8px 16px; border-radius: 20px; color: #4f46e5; }
-.teasers { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-.teaser-card { background: #f9fafb; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+/* -------------------------------------------------
+   HEADER (shared on every page)
+   ------------------------------------------------- */
+.header {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.header-text h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+.header-text p {
+  font-size: 1rem;
+  color: #555;
+}
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.social-icons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
 
-/* Nav */
-.bottom-nav { display: flex; justify-content: center; gap: 20px; padding: 20px; background: #f9fafb; }
-.menu-toggle { display: none; } /* Shown on mobile via media query */
+/* -------------------------------------------------
+   SECTION TITLES
+   ------------------------------------------------- */
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 3rem;
+  height: 3px;
+  background: #4f46e5;
+}
+
+/* -------------------------------------------------
+   BUTTONS
+   ------------------------------------------------- */
+.btn {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #4f46e5;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #c7d2fe;
+}
+
+/* -------------------------------------------------
+   TEASER CARDS (Home page)
+   ------------------------------------------------- */
+.teasers {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 2rem 1rem;
+}
+.teaser-card {
+  background: #f9fafb;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  text-align: center;
+}
+.teaser-card a {
+  margin-top: 0.5rem;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------
+   WORK EXPERIENCE
+   ------------------------------------------------- */
+.exp-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.company-logo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.exp-meta h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.exp-meta .role {
+  margin: 0.25rem 0 0;
+  font-weight: 500;
+  color: #4f46e5;
+}
+.exp-meta .tenure {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+.location {
+  background: #e0e7ff;
+  color: #4f46e5;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+.exp-toggle {
+  background: transparent;
+  border: none;
+  color: #4f46e5;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.75rem;
+}
+.exp-bullets {
+  list-style: disc inside;
+  margin: 1rem 0 0;
+  padding-left: 0.5rem;
+  transition: max-height 0.3s ease;
+}
+.exp-bullets.hidden {
+  display: none;
+}
+
+/* -------------------------------------------------
+   PROJECTS GRID & CARDS
+   ------------------------------------------------- */
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.project-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  transition: transform .2s, box-shadow .2s;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,.1);
+}
+.project-card h3 {
+  margin: 0 0 .5rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: 1.125rem;
+}
+.project-card .dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+}
+.project-card p {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+.tag {
+  background: #e2e8f0;
+  color: #475569;
+  font-size: .75rem;
+  padding: .25rem .5rem;
+  border-radius: 1rem;
+}
+
+/* -------------------------------------------------
+   SPACING HELPERS
+   ------------------------------------------------- */
+.mt-12 { margin-top: 3rem; }
+
+/* -------------------------------------------------
+   BOTTOM NAVIGATION
+   ------------------------------------------------- */
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+.bottom-nav a {
+  color: #4b5563;
+  font-weight: 500;
+}
+.bottom-nav a:hover {
+  color: #4f46e5;
+}
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #4f46e5;
+}
+
+/* Mobile menu */
 @media (max-width: 768px) {
-    .bottom-nav { flex-direction: column; }
-    .menu-toggle { display: block; }
-    .bottom-nav a { display: none; } /* Hidden until toggled */
-    .bottom-nav.open a { display: block; }
+  .bottom-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .bottom-nav a { display: none; }
+  .menu-toggle { display: block; }
+  .bottom-nav.open a { display: block; }
+}
+
+/* -------------------------------------------------
+   RESPONSIVE ADJUSTMENTS
+   ------------------------------------------------- */
+@media (max-width: 640px) {
+  .header-content { flex-direction: column; text-align: center; }
+  .exp-header { flex-direction: column; align-items: flex-start; }
+  .company-logo { margin-bottom: .5rem; }
+  .section-title { font-size: 1.5rem; }
 }
