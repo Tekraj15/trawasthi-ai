@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience – Tekraj Awasthi</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/main.js" defer></script>
+</head>
+<body>
+    <!-- ==== HEADER (same on every page) ==== -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Tekraj Awasthi</h1>
+                <p>MS Data Science (AI & ML), Ex - Senior Data & ML Engineer, Building Generative AI solutions(Large Language Model, RAG, and Computer Vision)</p>
+            </div>
+            <img src="../images/profile.jpg" alt="Adithya S Kolavi" class="profile-photo">
+        </div>
+        <div class="social-icons">
+            <a href="mailto:your.email@example.com"><img src="../images/email-icon.svg" alt="Email"></a>
+            <a href="https://linkedin.com/in/yourprofile"><img src="../images/linkedin-icon.svg" alt="LinkedIn"></a>
+            <a href="https://x.com/yourhandle"><img src="../images/x-icon.svg" alt="X"></a>
+            <a href="../assets/cv.pdf" download><img src="../images/cv-icon.svg" alt="CV"></a>
+        </div>
+    </header>
+
+    <!-- ==== MAIN CONTENT ==== -->
+    <main class="container">
+        <h2 class="section-title">Work Experience</h2>
+
+        <!-- ---- Microsoft ---- -->
+        <section class="exp-card">
+            <div class="exp-header">
+                <img src="../images/microsoft.svg" alt="Microsoft" class="company-logo">
+                <div class="exp-meta">
+                    <h3>Incedo Inc.</h3>
+                    <p class="role">Senior Data Engineer</p>
+                    <p class="tenure">March 2024 – Oct 2024 <span class="location">Gurgaon, India</span></p>
+                </div>
+            </div>
+            <button class="exp-toggle" aria-expanded="false">Show Details</button>
+            <ul class="exp-bullets hidden">
+                <li>Led the migration of Roche data warehouse from AWS to Snowflake, accelerating customer analytics and reducing monthly API operation and ad-hoc query costs by 28–30%.</li>
+                <li>Built MLOps experiment tracking pipeline (MLFlow, DagsHub) to analyze model performance and user feedback for Roche Medicine sales.</li>
+                <li>Optimized PySpark ETL pipeline using Adaptive Query Execution(AQE) and Cache/Persist strategy on 350 GB+ datasets: reduced runtime by 2.5 times and shuffle volume 70%.</li>
+            </ul>
+        </section>
+
+        <!-- ---- Apple ---- -->
+        <section class="exp-card">
+            <div class="exp-header">
+                <img src="../images/apple.svg" alt="Apple" class="company-logo">
+                <div class="exp-meta">
+                    <h3>Collabera Digital(Client - ZS Associates)</h3>
+                    <p class="role">Data Engineer</p>
+                    <p class="tenure">Jul 2023 – March 2024 <span class="location">On Site</span></p>
+                </div>
+            </div>
+            <button class="exp-toggle" aria-expanded="false">Show Details</button>
+            <ul class="exp-bullets hidden">
+                <li>Migrated the legacy Oracle Data warehouse to Snowflake and introduced configurable features, resulting in 32-35% faster data availability.</li>
+                <li>Automated Snowflake Materialized View refresh using Stored Proc, resulting in 1.5x faster data availability.</li>
+                <li>Orchestrated ETL workflows using Airflow, and automated infra provisioning with Terraform.</li>
+            </ul>
+        </section>
+
+        <!-- ---- CognitiveLab ---- -->
+        <section class="exp-card">
+            <div class="exp-header">
+                <img src="../images/cognitivelab.svg" alt="CognitiveLab" class="company-logo">
+                <div class="exp-meta">
+                    <h3>Bungee Tech </h3>
+                    <p class="role">Data and ML Engineer</p>
+                    <p class="tenure">June 2021 – April 2023 <span class="location">On Site</span></p>
+                </div>
+            </div>
+            <button class="exp-toggle" aria-expanded="false">Show Details</button>
+            <ul class="exp-bullets hidden">
+                <li>Developed an ML-powered product category segmentation using SentenceTransformer model, enhancing assortment segmentation accuracy by nearly 25%.</li>
+                <li>Orchestrated ML workflows and experiment tracking for retail price matching model using MLflow and DagsHub.</li>
+                <li>Automated client onboarding and catalog ingestion pipeline using Python, PySpark, and AWS, reducing manual onboarding effort by 40%.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ==== BOTTOM NAV ==== -->
+    <nav class="bottom-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work-experience.html">Work Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="education.html">Education</a>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+    </nav>
+</body>
+</html>
