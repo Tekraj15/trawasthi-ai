@@ -12,3 +12,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+/* ==== SHOW MORE / SHOW LESS EXPERIENCE ==== */
+document.getElementById('exp-show-more').addEventListener('click', () => {
+    document.getElementById('exp-full').classList.remove('hidden');
+    document.getElementById('exp-show-more').classList.add('hidden');
+    document.getElementById('exp-show-less').classList.remove('hidden');
+});
+
+document.getElementById('exp-show-less').addEventListener('click', () => {
+    document.getElementById('exp-full').classList.add('hidden');
+    document.getElementById('exp-show-less').classList.add('hidden');
+    document.getElementById('exp-show-more').classList.remove('hidden');
+});
