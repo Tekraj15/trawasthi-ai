@@ -14,45 +14,152 @@
                 <h1>Tekraj Awasthi</h1>
                 <p>Ex - Senior Data & Machine Learning Engineer, Building Generative AI solutions at Scale, and Swimming in the sea of LLM & RL</p>
             </div>
-            <img src="../images/profile.jpg" alt="Adithya S Kolavi" class="profile-photo">
+            <img src="../images/profile.jpg" alt="Tekraj Awasthi" class="profile-photo">
         </div>
         <div class="social-icons">
-            <a href="mailto:your.email@example.com"><img src="../images/email-icon.svg" alt="Email"></a>
-            <a href="https://linkedin.com/in/yourprofile"><img src="../images/linkedin-icon.svg" alt="LinkedIn"></a>
-            <a href="https://x.com/yourhandle"><img src="../images/x-icon.svg" alt="X"></a>
-            <a href="../assets/cv.pdf" download><img src="../images/cv-icon.svg" alt="CV"></a>
+            <a href="mailto:tekrajawasthi15@gmail.com"><img src="../images/gmail-icon.png" alt="Email"></a>
+            <a href="https://linkedin.com/in/Tekraj15"><img src="../images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://x.com/trawasthi_ai"><img src="../images/x-icon.png" alt="X"></a>
+            <a href="../assets/tekraj-resume.pdf" download><img src="../images/cv-icon.svg" alt="CV"></a>
         </div>
     </header>
 
-    <section class="about">
-        <h2>About</h2>
-        <p> Pursuing MS Data Science(AI & ML) @ FAU, Erlangen-Nuremberg. Doing Self-paced research and development in AI! Currently deep into RAG & Language Models.</p>
-        <a href="about.html" class="btn">More About Me</a>
-    </section>
+<!-- ==== ABOUT ==== -->
+<section class="about container section-spacing">
+    <h2 class="section-title">About</h2>
+    <p>Building AI that actually works! Currently deep into Vision-Language Models and Agentic Systems, with hands-on experience taking AI projects from wild ideas to real products. Love tinkering with model fine-tuning and cloud deployments. Big open-source enthusiast – you'll find me contributing to projects that make AI more accessible to everyone.</p>
+    <a href="about.html" class="btn">More About Me</a>
+</section>
 
-    <!-- Teasers for other sections -->
-    <section class="teasers">
-        <div class="teaser-card">
-            <h3>Work Experience</h3>
-            <p>Quick overview of roles...</p>
-            <a href="work-experience.html">View All</a>
-        </div>
-        <div class="teaser-card">
-            <h3>Projects</h3>
-            <p>Featured projects...</p>
-            <a href="projects.html">View All</a>
-        </div>
-    </section>
+<!-- ==== WORK EXPERIENCE – 3 cards visible initially ==== -->
+<section class="container section-spacing">
+    <h2 class="section-title">Work Experience</h2>
 
-    <nav class="bottom-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="work-experience.html">Work Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="blog.html">Blog</a>
-        <a href="education.html">Education</a>
-        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
-    </nav>
+    <div id="exp-list">
+        <!-- Incedo -->
+        <section class="exp-card">
+            <div class="exp-header">
+                <img src="../images/incedo-inc.jpg" alt="Incedo" class="company-logo">
+                <div class="exp-meta">
+                    <h3>Incedo Inc.</h3>
+                    <p class="role">Senior Data Engineer</p>
+                    <p class="tenure">March 2024 – Oct 2024 <span class="location">Gurgaon, India</span></p>
+                </div>
+            </div>
+            <div>
+                <button class="exp-toggle" aria-expanded="false">Show Details</button>
+                <p>
+                <ul class="exp-bullets hidden">
+                <li>Led the migration of Roche data warehouse from AWS to Snowflake, accelerating customer analytics and reducing monthly API operation and ad-hoc query costs by 28–30%.</li>
+                <li>Built MLOps experiment tracking pipeline (MLFlow, DagsHub) to analyze model performance and user feedback for Roche Medicine sales.</li>
+                <li>Optimized PySpark ETL pipeline using Adaptive Query Execution(AQE) and Cache/Persist strategy on 350 GB+ datasets: reduced runtime by 2.5 times and shuffle volume 70%.</li>
+            </ul>
+            </p>
+            </div>
+        </section>
+
+        <!-- Collabera Digital -->
+        <section class="exp-card">
+            <div class="exp-header">
+                <img src="../images/collabera-digital.jpeg" alt="Apple" class="company-logo">
+                <div class="exp-meta">
+                    <h3>Collabera Digital(Client - ZS Associates)</h3>
+                    <p class="role">Data Engineer</p>
+                    <p class="tenure">Jul 2023 – March 2024 <span class="location">On Site</span></p>
+                </div>
+            <div>
+                <button class="exp-toggle" aria-expanded="false">Show Details</button>
+                <p>
+                <ul class="exp-bullets hidden">
+                <li>Migrated the legacy Oracle Data warehouse to Snowflake and introduced configurable features, resulting in 32-35% faster data availability.</li>
+                <li>Automated Snowflake Materialized View refresh using Stored Proc, resulting in 1.5x faster data availability.</li>
+                <li>Orchestrated ETL workflows using Airflow, and automated infra provisioning with Terraform.</li>
+            </ul>
+            </p>
+            </div>
+        </section>
+
+        <!-- Bungee Tech -->
+        <section class="exp-card highlighted">
+            <div class="exp-header">
+                <img src="../images/bungee-tech.jpeg" alt="Bungee Tech" class="company-logo">
+                <div class="exp-meta">
+                    <h3>Bungee Tech </h3>
+                    <p class="role">Data & ML Engineer</p>
+                    <p class="tenure">June 2021 – April 2023 <span class="location">On Site</span></p>
+                </div>
+            </div>
+            <div>
+                <button class="exp-toggle" aria-expanded="false">Show Details</button>
+                <p>
+                <ul class="exp-bullets hidden">
+                <li>Developed an ML-powered product category segmentation using SentenceTransformer model, enhancing assortment segmentation accuracy by nearly 25%.</li>
+                <li>Orchestrated ML workflows and experiment tracking for retail price matching model using MLflow and DagsHub.</li>
+                <li>Automated client onboarding and catalog ingestion pipeline using Python, PySpark, and AWS, reducing manual onboarding effort by 40%.</li>
+            </ul>
+            </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==== SHOW MORE / SHOW LESS ==== -->
+    <div class="exp-toggle-wrapper">
+        <button id="exp-show-more" class="exp-toggle-btn">Show more experience</button>
+        <button id="exp-show-less" class="exp-toggle-btn hidden">Show less experience</button>
+    </div>
+
+    <!-- ==== HIDDEN FULL CARDS (loaded on click) ==== -->
+    <div id="exp-full" class="hidden">
+        <!--Dcoder.tech -->
+        <section class="exp-card">
+            <div class="exp-header">
+                <img src="../images/Dcoder.png" alt="Dcoder" class="company-logo">
+                <div class="exp-meta">
+                    <h3>Dcoder.tech</h3>
+                    <p class="role">Machine Learning Intern</p>
+                    <p class="tenure">Sept 2020 – Dec 2020<span class="location">Remote</span></p>
+                </div>
+            </div>
+            <button class="exp-toggle" aria-expanded="false">Show Details</button>
+            <ul class="exp-bullets hidden">
+                <li>Working on Real-time AI Systems.</li>
+                <li>Designed scalable inference pipelines for Vision-Language models.</li>
+                <li>Reduced latency by 40% using mixed-precision and kernel fusion.</li>
+            </ul>
+        </section>
+
+        <!-- Apple – full -->
+        <section class="exp-card">
+            <div class="exp-header">
+                <img src="../images/apple.svg" alt="Apple" class="company-logo">
+                <div class="exp-meta">
+                    <h3>Apple</h3>
+                    <p class="role">ML Intern – Unified Intelligence Team</p>
+                    <p class="tenure">January 2025 – June 2025 <span class="location">On Site</span></p>
+                </div>
+            </div>
+            <button class="exp-toggle" aria-expanded="false">Show Details</button>
+            <ul class="exp-bullets hidden">
+                <li>Part of the Unified Intelligence team building next-gen on-device models.</li>
+                <li>Implemented quantisation-aware training for 7-B models.</li>
+                <li>Contributed to internal benchmarking suite.</li>
+            </ul>
+        </section>
+
+    </div>
+</section>
+
+<!-- ==== BOTTOM NAV ==== -->
+<nav class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work-experience.html">Work Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="blog.html">Blog</a>
+    <a href="education.html">Education</a>
+    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+</nav>
+
 </body>
 </html>
