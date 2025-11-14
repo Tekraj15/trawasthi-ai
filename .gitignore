@@ -1,0 +1,53 @@
+# =========================
+# OS & Editor Files
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# =========================
+# VS Code / IDE
+# =========================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# =========================
+# Browser / Cache
+# =========================
+.cache/
+*.cache
+
+# =========================
+# Local Development
+# =========================
+# If you ever add a local server or preview tools
+node_modules/
+dist/
+build/
+out/
+
+# =========================
+# Images & Assets (Optional – only if you have source files)
+# =========================
+# Ignore raw image sources if you keep them separate
+images/src/
+images/*.psd
+images/*.sketch
+assets/*.ai
+assets/*.fig
+
+# =========================
+# Personal / Secrets
+# =========================
+.env
+.env.local
+secrets/
+*.key
+*.pem
