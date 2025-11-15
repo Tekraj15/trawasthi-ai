@@ -2,11 +2,10 @@ import { PROJECTS } from "../constants/project";
 import { Github } from "lucide-react";
 const Projects = () => {
   return (
-    <section id="project" className="projects-section max-w-5xl mx-auto px-4 pt-8">
+    <section id="project" className="pt-10 max-w-5xl mx-auto px-6 ">
       <h2 className="section-title text-3xl font-bold mb-10">
         Personal Projects
       </h2>
-
       <div className="projects-grid grid gap-8">
         {PROJECTS.map((project, index) => (
           <article

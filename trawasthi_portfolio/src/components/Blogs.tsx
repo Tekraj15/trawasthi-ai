@@ -1,9 +1,8 @@
 import { BLOG_POSTS } from "../constants/blogs.ts"; // Your blog data
 
-const Blogs= () => {
+const Blogs = () => {
   return (
-    <div id="blog" className="pt-10 max-w-5xl mx-auto px-6">
-
+    <section id="blog" className="pt-10 max-w-5xl mx-auto px-6 ">
       <div className="mb-12">
         <h1 className="text-4xl font-bold">Blog</h1>
         <p className="text-gray-600 mt-1">Thoughts, ideas, and tutorials.</p>
@@ -23,9 +22,7 @@ const Blogs= () => {
                 {post.title}
               </h2>
 
-              <p className="mt-2 text-gray-600 ">
-                {post.description}
-              </p>
+              <p className="mt-2 text-gray-600 ">{post.description}</p>
 
               <span className="mt-4 text-sm font-medium text-blue-600 group-hover:underline">
                 Read more →
@@ -41,7 +38,7 @@ const Blogs= () => {
           No blog posts yet. Check back soon!
         </p>
       )}
-    </div>
+    </section>
   );
 };
 

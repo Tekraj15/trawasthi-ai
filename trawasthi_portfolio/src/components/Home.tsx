@@ -1,20 +1,15 @@
-import profilePic from "../assets/LOGO.png";
+import profilePic from "../assets/tekraj.png";
 
 import { PROFILE_INFO, SOCIAL_LINKS } from "../constants/home.ts";
 
 const Home: React.FC = () => {
   return (
-    <div id="home" className="pt-10 max-w-5xl mx-auto px-6 ">
-
-      {/* Top Section */}
+    <section id="home" className="pt-10 max-w-5xl mx-auto px-6 ">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
-
-        {/* Name + Title + Icons */}
         <div>
           <h1 className="text-4xl font-bold">{PROFILE_INFO.name}</h1>
           <p className="text-gray-600 mt-1">{PROFILE_INFO.title}</p>
 
-          {/* Social Icons */}
           <div className="flex gap-3 mt-4">
             {SOCIAL_LINKS.map(({ name, url, icon: Icon, showText }) => (
               <a
@@ -31,15 +26,13 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        {/* Profile Image */}
         <img
           src={profilePic}
           alt="Profile"
           className="w-36 h-36 rounded-xl object-cover"
         />
       </div>
-
-    </div>
+    </section>
   );
 };
 

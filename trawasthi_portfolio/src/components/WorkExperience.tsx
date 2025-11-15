@@ -2,13 +2,12 @@ import { WORK_EXPERIENCE } from "../constants/work";
 
 const WorkExperience: React.FC = () => {
   return (
-    <div id="work-experience" className="max-w-5xl mx-auto px-4 pt-8">
+    <section id="work-experience" className="pt-10 max-w-5xl mx-auto px-6 ">
       <h2 className="text-3xl font-bold mb-10">Work Experience</h2>
 
       <div className="relative border-l-2 border-gray-200 ml-6">
         {WORK_EXPERIENCE.map((item) => (
           <div key={item.id} className="mb-12 ml-6">
-            {/* Logo */}
             <div className="absolute -left-10 bg-white rounded-full  border shadow-sm">
               <img
                 src={item.logo}
@@ -17,7 +16,6 @@ const WorkExperience: React.FC = () => {
               />
             </div>
 
-            {/* Card */}
             <div className="p-2 border rounded-xl shadow-sm bg-white relative hover:shadow-md transition">
               <div className="flex justify-between items-start">
                 {/* Company info */}
@@ -38,7 +36,6 @@ const WorkExperience: React.FC = () => {
                 </div>
               </div>
 
-              {/* Description */}
               <ul className="text-gray-700 mt-2 text-sm leading-relaxed list-disc ml-5">
                 {item.description.map((point, index) => (
                   <li key={index}>{point}</li>
@@ -48,7 +45,7 @@ const WorkExperience: React.FC = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ const AboutMe = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div id="about" className="pt-10 max-w-5xl mx-auto px-6">
+    <section id="about" className="pt-pt-10 max-w-5xl mx-auto px-6 ">
       <h2 className="text-3xl font-bold text-gray-800 mb-4">About</h2>
       <p className="text-gray-700 leading-relaxed mb-6">
         Ex - Senior Data & Machine Learning Engineer, Building Generative AI solutions (Language Model, RAG, and Computer Vision).
@@ -139,7 +139,7 @@ const AboutMe = () => {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
